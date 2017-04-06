@@ -1,0 +1,42 @@
+CPU Information
+
+This program is a visual representation of the file '/proc/cpuinfo'. It uses the model/view approach
+of Qt. The data will be collected/processed in the c++ part and stored in a model. The QML part
+represents the graphical view of the model data.
+
+Requirements
+- Qt 5.7.1 for QtQuick SwipeView
+- Unix system to read the proc file
+
+Installation
+
+1. Install the qt package from https://www.qt.io/download-open-source/
+2. Select at least the qt version 5.7 in the installation process
+3. Finish the installation process
+
+Start the application
+1. Inside the QtCreator open this project (file->open project).
+2. Select in the open dialog this file: cpuInfo.pro
+3. Now use the shortcut STRG+R to start the application
+
+Usage
+
+The application is divided in two views:
+- graphical Bar for every logical processor
+- brief summary of relevant CPU information
+
+Change the view
+
+Swipe horizontally on the screen.
+
+Documentation
+
+Take a look at the installation webpage of Doxygen.
+They have a nice step-by-step guide: http://www.stack.nl/~dimitri/doxygen/manual/install.html
+
+This command generates the documentation:
+doxygen cpuInfo_manual
+
+After the generation there will be a HTML directory in this folder. Open the index.html for a detailed documentation of this project. 
+
+This documentation is created by Doxygen.

@@ -1,7 +1,7 @@
 //!  CPU Filereader.
 /*!
-  This class is reads the iformation of the generated proc file.
-  It reads the cpu information periodically. If new data is ready it emits a singal updateDataStream.
+  This class is reads the information of the generated proc file.
+  It reads the cpu information periodically. If new data is ready it emits a signal updateDataStream.
 */
 
 #ifndef FILEREADER_H
@@ -18,7 +18,7 @@ class FileReader : public QObject
 public:
     //! Constructor of the file reader.
     /*!
-      The constructor starts a timer to read the file in an intervall.
+      The constructor starts a timer to read the file in an interval.
     */
     explicit FileReader(QObject *parent = 0);
     //! Destructor of the file reader.
@@ -29,7 +29,7 @@ public:
 
 signals:
     //! This signal is emitted after a new datastream of
-    //! cpu information is available
+    //! CPU information is available
     /*!
       \param fileDatastream stores the new file data
     */

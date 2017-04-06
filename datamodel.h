@@ -1,8 +1,8 @@
 //!  CPU Datamodel.
 /*!
-  This class is the representation of the correspondending
+  This class is the representation of the corresponding
   datamodel. That datamodel is used for the CPU data in the QML Views.
-  It starts a thread to read the cpu information in a file.
+  It starts a thread to read the CPU information in a file.
 */
 
 #ifndef DATAMODEL_H
@@ -21,7 +21,7 @@ class DataModel : public QQmlPropertyMap
 public:
     //! Constructor of the datamodel.
     /*!
-      The constructor starts a thread to read the cpu data in a file.
+      The constructor starts a thread to read the CPU data in a file.
       \param derived is necessary to ensure that properties of the derived class are accessible.
       \param parent parent object
     */
@@ -33,7 +33,7 @@ public:
     ~DataModel();
 
 public slots:
-    //! This slot is called to process new cpu information.
+    //! This slot is called to process new CPU information.
     /*!
       \param datastream stores the data update
     */
