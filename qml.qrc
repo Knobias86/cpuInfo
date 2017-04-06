@@ -1,8 +1,8 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
-        <file>View1.qml</file>
-        <file>View2.qml</file>
+        <file>CpuInfo.qml</file>
+        <file>CpuCoreList.qml</file>
+        <file>CpuSummary.qml</file>
         <file>simulationData.txt</file>
     </qresource>
 </RCC>
