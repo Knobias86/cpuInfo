@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>View1.qml</file>
+        <file>View2.qml</file>
+        <file>simulationData.txt</file>
+    </qresource>
+</RCC>
