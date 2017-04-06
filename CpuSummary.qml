@@ -58,22 +58,17 @@ Rectangle
             Text
             {
                 color: "white"
-                text: String(cpuData["siblings0"])
+                text: String(cpuData["logical_units"])
             }
             Text
             {
                 color: "white"
-                text: "Hyperthreading:\n(2 threads/logical core)"
+                text: "BogoMIPS:"
             }
             Text
             {
                 color: "white"
-                text: (cpuData["siblings0"] / cpuData["cpu cores0"] == 2) ? "yes": "no"
-
-            Text
-            {
-                color: "white"
-                text: String(cpuData["cache size0"])
+                text: String(cpuData["BogoMIPS0"])
             }
             Text
             {
@@ -85,7 +80,7 @@ Rectangle
                 width: 250
                 wrapMode: Text.WordWrap
                 color: "white"
-                text: String(cpuData["flags0"])
+                text: String(cpuData["Features0"])
             }
         }
     }
