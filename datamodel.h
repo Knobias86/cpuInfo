@@ -23,6 +23,7 @@ public:
     /*!
       The constructor starts a thread to read the cpu data in a file.
       \param derived is necessary to ensure that properties of the derived class are accessible.
+      \param parent parent object
     */
     explicit DataModel(DataModel *derived, QObject *parent=0);
     //! Destructor of the datamodel.
