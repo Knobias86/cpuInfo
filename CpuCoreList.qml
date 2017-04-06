@@ -42,7 +42,7 @@ Rectangle
             Repeater
             {
                 id: repeater
-                model: 4
+                model: cpuData["logical_units"]
 
                 Row
                 {
