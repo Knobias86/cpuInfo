@@ -16,13 +16,13 @@ Window
         currentIndex: 0
         anchors.fill: parent
 
-        CpuCoreList
-        {
-            id: cpuCoreView
-        }
         CpuSummary
         {
             id: cpuSummary
+        }
+        CpuCoreList
+        {
+            id: cpuCoreView
         }
     }
 
