@@ -19,6 +19,7 @@
  *
  * Swipe horicontally on the screen.
  *
+ * \todo Switch to qbs to create different datamodels for several devices
  */
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
