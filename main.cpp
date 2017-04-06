@@ -9,10 +9,6 @@
  * - Qt 5.7.1 for QtQuick SwipeView
  * - Unix system to read the proc file
  *
- * \section  install_sec Installation
- *
- * \subsection step1 Step 1: Opening the box
- *
  * \section  handling_sec Usage
  *
  * The application is divided in two views:
