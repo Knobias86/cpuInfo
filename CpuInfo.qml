@@ -8,6 +8,7 @@ Window
     visible: true
     width: 480
     height: 320
+    color: "black"
 
     SwipeView
     {
@@ -32,7 +33,6 @@ Window
 
         count: view.count
         currentIndex: view.currentIndex
-
 
         delegate: Rectangle
         {
