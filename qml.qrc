@@ -4,5 +4,6 @@
         <file>CpuCoreList.qml</file>
         <file>CpuSummary.qml</file>
         <file>simulationData.txt</file>
+        <file>GaugeSpeedSimulation.qml</file>
     </qresource>
 </RCC>

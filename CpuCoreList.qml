@@ -42,10 +42,14 @@ Rectangle
             Repeater
             {
                 id: repeater
-                model: cpuData["logical_units"]
+                model: 4
 
                 Row
                 {
+                    GaugeSpeedSimulation {
+                        id: gaugeSpeedSource
+                    }
+
                     Text
                     {
                         id: cputext
@@ -60,18 +64,10 @@ Rectangle
                         orientation: Qt.Horizontal
 
                         minimumValue: 0
-                        maximumValue: 3100
+                        maximumValue: 2500
 
-                        tickmarkStepSize: 700
-                        value: parseFloat(cpuData["cpu MHz"+index])
-
-                        Behavior on value
-                        {
-                            NumberAnimation
-                            {
-                                duration: 1000
-                            }
-                        }
+                        tickmarkStepSize: 600
+                        value: gaugeSpeedSource.speed
 
                         style: GaugeStyle
                         {
@@ -87,7 +83,7 @@ Rectangle
                         rightPadding: 10
 
                         color: "white"
-                        text: parseInt(cpuData["cpu MHz" + index]) + " MHz";
+                        text: parseInt(gaugeSpeedSource.speed) + " MHz";
                     }
                 }
             }
