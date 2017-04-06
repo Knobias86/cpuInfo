@@ -53,16 +53,6 @@ Rectangle
             Text
             {
                 color: "white"
-                text: "No. physical CPUs: "
-            }
-            Text
-            {
-                color: "white"
-                text: String(cpuData["logical_units"] / cpuData["siblings0"])
-            }
-            Text
-            {
-                color: "white"
                 text: "No. logical cores: \n(per CPU)"
             }
             Text
@@ -80,12 +70,6 @@ Rectangle
                 color: "white"
                 text: (cpuData["siblings0"] / cpuData["cpu cores0"] == 2) ? "yes": "no"
 
-            }
-            Text
-            {
-                color: "white"
-                text: "L2 cache:"
-            }
             Text
             {
                 color: "white"
