@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
     DataModel datamodel(&datamodel);
     engine.rootContext()->setContextProperty("cpuData",
                                              &datamodel);
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:/CpuInfo.qml")));
 
     return app.exec();
 }
